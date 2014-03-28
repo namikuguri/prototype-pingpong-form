@@ -1,0 +1,18 @@
+$border-color: #eeedeb;
+$bg-color: #fff;
+
+header {
+  overflow: hidden;
+  border-bottom: 1px solid #eeedeb;
+  background-color: #fff;
+}
+
+main[role="main"] {
+  overflow: hidden;
+}
+
+footer {
+  overflow: hidden;
+  border-top: 1px solid #eeedeb;
+  background-color: #fff;
+}
