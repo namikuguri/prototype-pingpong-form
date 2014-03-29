@@ -14,6 +14,14 @@ body {
   font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, sans-serif;
   font-size: 14px;
   color: $site-color;
+  line-height: 1.618;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.35;
 }
 
 h1 {

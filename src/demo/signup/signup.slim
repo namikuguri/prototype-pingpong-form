@@ -8,7 +8,9 @@ html lang="ja"
     link rel="stylesheet" href="assets/stylesheets/modules/header.css" media="all"
     link rel="stylesheet" href="assets/stylesheets/modules/main.css" media="all"
     link rel="stylesheet" href="assets/stylesheets/modules/footer.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/modules/demos.css" media="all"
+    link rel="stylesheet" href="assets/stylesheets/modules/form.css" media="all"
+    link rel="stylesheet" href="assets/stylesheets/modules/signup.css" media="all"
+    link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
   body
     header
       div class="header-inner"
@@ -19,11 +21,68 @@ html lang="ja"
             | Form with interactive operability
 
     main[role="main"]
-      div class="main-module demos"
-        div class="demos-header"
-          h1 class="demos-title"
-            | Demos
-        div class="demos-body"
+      div class="main-module signup"
+        form accept-charset="UTF-8" action="" method="post" id="new_signup" class="form"
+          div class="signup-header"
+            h1 class="signup-header-title"
+              | 新規会員申し込み
+            div class="signup-header-flow"
+              ol class="signup-header-flow-list"
+                li 入力
+                li 確認
+                li 完了
+          div class="signup-body"
+            div class="signup-body-form"
+              fieldset class="form-fieldset"
+                legend class="form-fieldset-legend"
+                  | お客様情報
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-field-header-required"
+                      | 必須
+                    label class="form-field-header-label"
+                      | 項目名
+                      small class="form-field-header-label-note"
+                        a href=""
+                          | 項目名に関する補足
+                  div class="form-field-body"
+                    small class="form-field-body-note"
+                      | 入力に関する注釈や例文
+                    div class="form-field-body-input"
+                      input class="form-parts-text" type="text"
+                  div class="form-field-footer"
+                    div class="form-field-footer-status"
+                      div class="form-field-footer-status-icon"
+                        i class="ico-status-pass"
+                      p class="form-field-footer-status-message"
+                        | 入力が完了しました。
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-field-header-optional"
+                      | 任意
+                    label class="form-field-header-label"
+                      | 項目名
+                      small class="form-field-header-label-note"
+                        a href=""
+                          | 項目名に関する補足
+                  div class="form-field-body"
+                    small class="form-field-body-note"
+                      | 入力に関する注釈や例文
+                    div class="form-field-body-input"
+                      input class="form-parts-text" type="text"
+                  div class="form-field-footer"
+                    div class="form-field-footer-status"
+                      div class="form-field-footer-status-icon"
+                        i class="ico-status-pass"
+                      p class="form-field-footer-status-message"
+                        | 入力が完了しました。
+
+          div class="signup-footer"
+            div class="signup-footer-pagination"
+              button type="submit" class="form-btn-next"
+                | 確認画面に進む
+                span class="form-btn-separation"
+                i class="form-btn-icon-next fa fa-chevron-right"
 
     footer
       div class="footer-inner"
