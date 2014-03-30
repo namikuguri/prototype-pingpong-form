@@ -1,14 +1,11 @@
 @charset "UTF-8";
 .form-fieldset {
-  margin: 18px 0;
-  padding: 0;
-  border: 0; }
+  margin: 18px 0; }
   .form-fieldset:first-child {
     margin-top: 0; }
 
 .form-fieldset-legend {
   margin-bottom: 13px;
-  padding: 0;
   width: 100%;
   font-size: 24px; }
 
@@ -80,16 +77,11 @@
   margin-top: 0;
   margin-bottom: 0; }
 
-/* form pats */
 .form-parts-text {
-  margin: 0;
-  padding: 5px 8px;
   border-width: 1px;
-  border-color: #eeedeb;
-  font-size: 14px; }
+  border-color: #eeedeb; }
 
-/* form buttons */
-.form-btn-next {
+.form-parts-btn-next {
   display: block;
   margin: 0;
   padding: 5px 18px;
@@ -104,7 +96,7 @@
   -webkit-appearance: none;
   -moz-appearance: none; }
 
-.form-btn-separation {
+.form-parts-btn-separation {
   margin: 0 13px;
   width: 1px;
   height: 100%;
