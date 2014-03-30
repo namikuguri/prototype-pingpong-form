@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.form-fieldset {
+  margin: 18px 0;
+  padding: 0;
+  border: 0; }
+  .form-fieldset:first-child {
+    margin-top: 0; }
+
+.form-fieldset-legend {
+  margin-bottom: 13px;
+  padding: 0;
+  width: 100%;
+  font-size: 24px; }
+
+.form-field {
+  margin: 13px 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #eeedeb; }
+
+.form-field-header {
+  margin-bottom: 13px; }
+
+.form-field-header-required {
+  margin-right: 8px;
+  padding: 3px 8px;
+  border: 1px solid #699569;
+  border-radius: 4px;
+  background-color: #77a977;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle; }
+
+.form-field-header-optional {
+  margin-right: 8px;
+  padding: 3px 8px;
+  border: 1px solid #7f7f7f;
+  border-radius: 4px;
+  background-color: #909090;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle; }
+
+.form-field-header-label {
+  font-size: 18px; }
+
+.form-field-header-label-note {
+  font-size: 14px; }
+  .form-field-header-label-note:before {
+    content: "（"; }
+  .form-field-header-label-note:after {
+    content: "）"; }
+
+.form-field-body {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #f8f9f8; }
+
+.form-field-body-note {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px; }
+
+.form-field-body-input {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #eeedeb;
+  background-color: #fff; }
+
+.form-field-footer {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-width: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #f8f9f8; }
+
+.form-field-footer-status-message {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+/* form pats */
+.form-parts-text {
+  margin: 0;
+  padding: 5px 8px;
+  border-width: 1px;
+  border-color: #eeedeb;
+  font-size: 14px; }
+
+/* form buttons */
+.form-btn-next {
+  display: block;
+  margin: 0;
+  padding: 5px 18px;
+  border: 1px solid #b24f31;
+  border-radius: 4px;
+  background-color: #db4c22;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 0 #b24f31;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.form-btn-separation {
+  margin: 0 13px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4); }
