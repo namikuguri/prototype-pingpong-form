@@ -1,3 +1,16 @@
+// # State
+// 状態に伴うスタイルの変更。
+
+// # Form Filed Status
+// ## Status Check
+// ```
+// <div class="form-field"><div class="form-field-body"><small class="form-field-body-note">入力に関する注釈や例文</small><div class="form-parts-cover"><input class="form-parts-text" placeholder="Placeholder" type="text"></div></div><div class="form-field-footer"><div class="form-field-footer-status is-form-field-footer-status-check"><div class="form-field-footer-status-icon"><i class="ico-status-pass fa fa-check"></i></div><p class="form-field-footer-status-message">入力が完了しました。</p></div></div></div>
+// ```
+// ## Status Error
+// ```
+// <div class="form-field"><div class="form-field-body is-form-field-body-error"><small class="form-field-body-note">入力に関する注釈や例文</small><div class="form-parts-cover"><input class="form-parts-text" placeholder="Placeholder" type="text"></div></div><div class="form-field-footer"><div class="form-field-footer-status is-form-field-footer-status-error"><div class="form-field-footer-status-icon"><i class="ico-status-pass fa fa-minus"></i></div><p class="form-field-footer-status-message">入力欄が空白です。</p></div></div></div>
+// ```
+
 .is-form-field-footer-status-check {
   .form-field-footer-status-icon {
     border-color: #53aa54;

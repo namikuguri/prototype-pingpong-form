@@ -4,7 +4,8 @@ header {
   background-color: #fff; }
 
 main[role="main"] {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #43444f; }
 
 footer {
   overflow: hidden;
