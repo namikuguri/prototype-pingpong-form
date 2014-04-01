@@ -44,6 +44,7 @@
 }
 
 .form-field-header-required {
+  display: inline-block;
   margin-right: 8px;
   padding: 3px 8px;
   border: 1px solid #699569;
@@ -52,9 +53,11 @@
   font-size: 14px;
   color: #fff;
   vertical-align: middle;
+  line-height: 1;
 }
 
 .form-field-header-optional {
+  display: inline-block;
   margin-right: 8px;
   padding: 3px 8px;
   border: 1px solid #7f7f7f;
@@ -63,6 +66,7 @@
   font-size: 14px;
   color: #fff;
   vertical-align: middle;
+  line-height: 1;
 }
 
 .form-field-header-label {
@@ -186,6 +190,7 @@
 .form-parts-btn-next {
   display: block;
   margin: 0;
+  margin-bottom: 5px;
   padding: 5px 18px;
   border: 1px solid #b24f31;
   border-radius: 4px;
