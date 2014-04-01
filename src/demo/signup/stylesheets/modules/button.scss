@@ -1,0 +1,134 @@
+// # Button
+// ボタン。
+
+.button {
+  display: inline-block;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline-width: 0;
+  }
+}
+
+.btn-separation {
+  margin: 0 13px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, .4);
+}
+
+// ## Button - Link Button
+// ### Default
+// ```
+// <a href="" class="button btn-link">詳細ページに進む</a>
+// ```
+// ### Hover
+// ```
+// <a href="" class="button btn-link :hover">詳細ページに進む</a>
+// ```
+// ### Active
+// ```
+// <a href="" class="button btn-link :active">詳細ページに進む</a>
+// ```
+
+.btn-link {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #307fb2;
+  border-radius: 4px;
+  background-color: #2194db;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.4);
+  box-shadow: 0 3px 0 #307fb2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    opacity: .95;
+    text-decoration: none;
+  }
+  &:active {
+    top: 2px;
+    box-shadow: 0 1px 0 #307fb2;
+  }
+  &:visited {
+    color: #fff;
+  }
+}
+
+// ## Button - Next Form Button
+// ### Default
+// ```
+// <button class="button btn-next-form" type="submit">確認画面に進む<span class="btn-separation"></span><i class="fa fa-chevron-right"></i></button>
+// ```
+// ### Hover
+// ```
+// <button class="button btn-next-form :hover" type="submit">確認画面に進む<span class="btn-separation"></span><i class="fa fa-chevron-right"></i></button>
+// ```
+// ### Active
+// ```
+// <button class="button btn-next-form :active" type="submit">確認画面に進む<span class="btn-separation"></span><i class="fa fa-chevron-right"></i></button>
+// ```
+
+.btn-next-form {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #b24f31;
+  border-radius: 4px;
+  background-color: #db4c22;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.4);
+  box-shadow: 0 5px 0 #b24f31;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    opacity: .95;
+  }
+  &:active {
+    top: 2px;
+    box-shadow: 0 3px 0 #b24f31;
+  }
+}
+
+// ## Button - Prev Form Button
+// ### Default
+// ```
+// <button class="button btn-prev-form" type="button"><i class="fa fa-chevron-left"></i><span class="btn-separation"></span>入力内容を訂正する</button>
+// ```
+// ### Hover
+// ```
+// <button class="button btn-prev-form :hover" type="button"><i class="fa fa-chevron-left"></i><span class="btn-separation"></span>入力内容を訂正する</button>
+// ```
+// ### Active
+// ```
+// <button class="button btn-prev-form :active" type="button"><i class="fa fa-chevron-left"></i><span class="btn-separation"></span>入力内容を訂正する</button>
+// ```
+
+.btn-prev-form {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #818181;
+  border-radius: 4px;
+  background-color: #919191;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.4);
+  box-shadow: 0 5px 0 #818181;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:hover {
+    opacity: .95;
+  }
+  &:active {
+    top: 2px;
+    box-shadow: 0 3px 0 #818181;
+  }
+}

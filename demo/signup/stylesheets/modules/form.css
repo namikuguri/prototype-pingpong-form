@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.form-fieldset {
+  margin: 18px 0; }
+  .form-fieldset:first-child {
+    margin-top: 0; }
+
+.form-fieldset-legend {
+  margin-bottom: 13px;
+  width: 100%;
+  font-size: 24px; }
+
+.form-field {
+  margin: 13px 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #eeedeb; }
+
+.form-field-header {
+  margin-bottom: 13px; }
+
+.form-field-body {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #f8f9f8; }
+
+.form-field-footer {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-width: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #f8f9f8; }
+
+.form-pagination {
+  overflow: hidden; }
+  .form-pagination .btn-prev,
+  .form-pagination .btn-prev-form {
+    float: left; }
+  .form-pagination .btn-next,
+  .form-pagination .btn-next-form {
+    float: right; }
+
+.form-input-label {
+  display: inline;
+  font-size: 18px; }
+
+.form-input-label-note {
+  font-size: 14px; }
+  .form-input-label-note:before {
+    content: "（"; }
+  .form-input-label-note:after {
+    content: "）"; }
+
+.form-input-required {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 5px 8px;
+  border: 1px solid #699569;
+  border-radius: 4px;
+  background-color: #77a977;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 1; }
+
+.form-input-optional {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 5px 8px;
+  border: 1px solid #7f7f7f;
+  border-radius: 4px;
+  background-color: #909090;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 1; }
+
+.form-input-text {
+  border-width: 1px;
+  border-color: #eeedeb;
+  width: 400px; }
+
+.form-input-textarea {
+  border-width: 1px;
+  border-style: inset;
+  border-color: #eeedeb;
+  width: 600px;
+  height: 80px; }
+
+.form-input-radio {
+  margin-right: 5px; }
+
+.form-input-checkbox {
+  margin-right: 5px; }
+
+.form-input-cover {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #eeedeb;
+  background-color: #fff; }
+
+.form-input-cover-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  .form-input-cover-list li {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px;
+    border: 1px solid #eeedeb;
+    background-color: #fff; }
+
+.form-input-cover-list-specials li {
+  width: 30%;
+  margin-bottom: 8px; }
+
+.form-input-note {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px; }
+
+.form-input-status {
+  overflow: hidden;
+  min-height: 26px; }
+
+.form-input-status-icon {
+  float: left;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #818181;
+  border-radius: 50%;
+  background-color: #909090;
+  text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+  color: #fff; }
+
+.form-input-status-message {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 26px;
+  vertical-align: middle; }

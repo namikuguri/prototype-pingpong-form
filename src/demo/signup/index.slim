@@ -1,0 +1,254 @@
+doctype html
+html lang="ja"
+  head
+    title Demo - Signup Form | PingPong Form ( Prototype ) 
+    meta name="keywords" content="template language"
+    link rel="stylesheet" href="stylesheets/base/base.css" media="all"
+    link rel="stylesheet" href="stylesheets/layout/layout.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/module.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/site.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/button.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/form.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/icon.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/signup.css" media="all"
+    link rel="stylesheet" href="stylesheets/state/state.css" media="all"
+    link rel="stylesheet" href="../../../vendor/font-awesome/css/font-awesome.min.css" media="all"
+  body
+    header
+      div class="header-module"
+        div class="site-title"
+          h1 class="site-title-logo"
+            a href="../../index.html" class="site-title-logo-link"
+              | PingPong Form ( Prototype ) 
+          strong class="site-title-description"
+            | Form with interactive operability
+
+    main[role="main"]
+      div class="main-module signup"
+        form accept-charset="UTF-8" action="/singup" method="post" id="new_signup" class="form"
+          div class="signup-header"
+            h1 class="signup-title"
+              | 新規会員申し込み
+            div class="signup-flow"
+              ol class="signup-flow-list"
+                li class="is-flow-active" 入力
+                li 確認
+                li 完了
+          div class="signup-body"
+            div class="signup-body-form"
+              fieldset class="form-fieldset"
+                legend class="form-fieldset-legend"
+                  | お客様情報
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label"
+                      | 項目名
+                      small class="form-input-label-note"
+                        a href=""
+                          | 項目名に関する補足
+                  div class="form-field-body is-form-input-error"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status is-form-input-status-error"
+                      div class="form-input-status-icon"
+                        i class="icon fa fa-minus"
+                      p class="form-input-status-message"
+                        | 入力欄が空白です。
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-optional"
+                      | 任意
+                    label class="form-input-label"
+                      | 項目名
+                      small class="form-input-label-note"
+                        a href=""
+                          | 項目名に関する補足
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status is-form-input-status-check"
+                      div class="form-input-status-icon"
+                        i class="icon fa fa-check"
+                      p class="form-input-status-message"
+                        | 入力が完了しました。
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="name"
+                      | お名前
+                      small class="form-input-label-note"
+                        | input type="text"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" id="name" name="name"  placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="email"
+                      | メールアドレス
+                      small class="form-input-label-note"
+                        | input type="email"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-text" type="email" id="email" name="email" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="password"
+                      | パスワード
+                      small class="form-input-label-note"
+                        | input type="password"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-text" type="password" id="password" name="password" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="profile-pic"
+                      | プロフィール画像
+                      small class="form-input-label-note"
+                        | input type="file"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      input class="form-input-file" type="file" id="profile-pic" name="profile-pic"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label"
+                      | 性別
+                      small class="form-input-label-note"
+                        | input type="radio"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    ul class="form-input-cover-list"
+                      li
+                        label
+                          input class="form-input-radio" type="radio" id="gender1" name="gender" value="1"
+                          | 男性
+                      li
+                        label
+                          input class="form-input-radio" type="radio" id="gender2" name="gender" value="2"
+                          | 女性
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label"
+                      | 得意分野
+                      small class="form-input-label-note"
+                        | input type="checkbox"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    ul class="form-input-cover-list form-input-cover-list-specials"
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special1" name="specials"
+                          | トップス
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special2" name="specials"
+                          | ジェケット・アウター
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special3" name="specials"
+                          | シューズ
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special4" name="specials"
+                          | アクセサリー
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special5" name="specials"
+                          | パンツ
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="special6" name="specials"
+                          | オールインワン
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="prefecture"
+                      | 都道府県
+                      small class="form-input-label-note"
+                        | select
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      select class="form-input-select" id="prefecture" name="prefecture"
+                        option value="" -- 選択してください --
+                        option value="1" 北海道 
+                        option value="2" 青森県
+                        option value="3" 岩手県
+                        option value="4" 宮城県
+                        option value="5" 山形県
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-optional"
+                      | 任意
+                    label class="form-input-label" for="note"
+                      | 備考欄
+                      small class="form-input-label-note"
+                        | textarea
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    div class="form-input-cover"
+                      textarea class="form-input-textarea" id="note" name="note"  placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+          div class="signup-footer"
+            div class="form-pagination"
+              button type="button" class="button btn-prev-form"
+                i class="fa fa-chevron-left"
+                span class="btn-separation"
+                | 入力内容を訂正する
+              button type="submit" class="button btn-next-form"
+                | 確認画面に進む
+                span class="btn-separation"
+                i class="fa fa-chevron-right"
+
+    footer
+      div class="footer-module"
+        address class="site-author"
+          | Made by
+          a href="https://github.com/thleap" target="_blank" class="site-author-account"
+            | thleap

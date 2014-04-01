@@ -1,0 +1,89 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  line-height: 1.618; }
+
+h1 {
+  font-size: 24px;
+  line-height: 1.35; }
+
+h2 {
+  font-size: 18px;
+  line-height: 1.35; }
+
+h3 {
+  font-size: 16px;
+  line-height: 1.35; }
+
+h4 {
+  font-size: 14px;
+  line-height: 1.35; }
+
+em {
+  font-weight: bold;
+  font-style: normal; }
+
+a {
+  color: #0076c9;
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover {
+    color: #0076c9;
+    text-decoration: underline; }
+  a:visited {
+    color: #0076c9;
+    text-decoration: none;
+    cursor: pointer; }
+
+img {
+  vertical-align: middle; }
+
+ul {
+  padding-left: 15px; }
+
+ol {
+  padding-left: 20px; }
+
+fieldset {
+  padding: 0;
+  border: 0; }
+
+legend {
+  padding: 0; }
+
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  font-size: 14px; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  padding: 5px 8px; }
+
+input[type="file"] {
+  padding: 2px; }
+  input[type="file"]::-webkit-file-upload-button {
+    padding: .1em .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    background-image: gradient(linear, left top, left bottom, from(#e7e7e7), to(white));
+    box-shadow: inset 10px 0 12px -12px rgba(0, 0, 0, 0.4), inset -10px 0 12px -12px rgba(0, 0, 0, 0.4);
+    line-height: normal; }
+    input[type="file"]::-webkit-file-upload-button:focus {
+      outline-offset: -2px; }
+
+select {
+  border: 1px solid #ccc; }

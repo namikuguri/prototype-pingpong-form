@@ -1,0 +1,75 @@
+.button {
+  display: inline-block; }
+  .button:hover {
+    cursor: pointer; }
+  .button:focus {
+    outline-width: 0; }
+
+.btn-separation {
+  margin: 0 13px;
+  width: 1px;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4); }
+
+.btn-link {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #307fb2;
+  border-radius: 4px;
+  background-color: #2194db;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 0 #307fb2;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .btn-link:hover {
+    opacity: .95;
+    text-decoration: none; }
+  .btn-link:active {
+    top: 2px;
+    box-shadow: 0 1px 0 #307fb2; }
+  .btn-link:visited {
+    color: #fff; }
+
+.btn-next-form {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #b24f31;
+  border-radius: 4px;
+  background-color: #db4c22;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 0 #b24f31;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .btn-next-form:hover {
+    opacity: .95; }
+  .btn-next-form:active {
+    top: 2px;
+    box-shadow: 0 3px 0 #b24f31; }
+
+.btn-prev-form {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 18px;
+  border: 1px solid #818181;
+  border-radius: 4px;
+  background-color: #919191;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 0 #818181;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .btn-prev-form:hover {
+    opacity: .95; }
+  .btn-prev-form:active {
+    top: 2px;
+    box-shadow: 0 3px 0 #818181; }

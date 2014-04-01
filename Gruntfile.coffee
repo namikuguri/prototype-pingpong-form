@@ -41,29 +41,62 @@ module.exports = (grunt) ->
       index:
         files: [
           expand: true
-          cwd: "src/assets/stylesheets/"
+          cwd: "src/stylesheets/"
           src: ["**/*.scss"]
-          dest: "assets/stylesheets/"
+          dest: "stylesheets/"
           ext: ".css"
         ]
       signup:
         files: [
           expand: true
-          cwd: "src/demo/signup/assets/stylesheets/"
+          cwd: "src/demo/signup/stylesheets/"
           src: ["**/*.scss"]
-          dest: "demo/signup/assets/stylesheets/"
+          dest: "demo/signup/stylesheets/"
           ext: ".css"
         ]
 
     # Make Style Guide ( StyleDocco )
     styleguide:
       dist:
-        name: "Style Guide"
         options:
+          name: "Style Guide"
           framework:
             name: "styledocco"
             options: preprocessor: "sass"
-        files: "docs/styledocco/": "src/demo/signup/assets/stylesheets/**/*.scss"
+          template:
+            include: ["vendor/font-awesome/css/font-awesome.min.css",
+                      "vendor/font-awesome/fonts/fontawesome-webfont.eot",
+                      "vendor/font-awesome/fonts/fontawesome-webfont.svg",
+                      "vendor/font-awesome/fonts/fontawesome-webfont.ttf",
+                      "vendor/font-awesome/fonts/fontawesome-webfont.woff",
+                      "vendor/font-awesome/fonts/FontAwesome.otf"]
+        files: "docs/styledocco/": "src/demo/signup/stylesheets/**/*.scss"
+
+    # Lint HTML
+    htmllint:
+      index: "*.html"
+      signup: "demo/signup/*.html"
+
+    # Lint CSS
+    csslint:
+      options:
+        "box-model": false
+        "fallback-colors": false
+      index:
+        src: ["stylesheets/**/*.css"]
+      signup:
+        src: ["demo/signup/stylesheets/**/*.css"]
+
+    # Parse CSS and add vendor-prefixed CSS properties
+     autoprefixer:
+       index:
+         options:
+           browsers: ["last 2 version", "ie >= 8"]
+         src: ["stylesheets/**/*.css"]
+       signup:
+         options:
+           browsers: ["last 2 version", "ie >= 8"]
+         src: ["demo/signup/stylesheets/**/*.css"]
 
     # Monitoring files, and Do browser live reload
     watch:
@@ -71,7 +104,7 @@ module.exports = (grunt) ->
         files: ["src/{,*/}*.slim", "src/demo/signup/*.slim"]
         tasks: ["slim"]
       sass:
-          files: ["src/assets/stylesheets/**/*.scss", "src/demo/signup/assets/stylesheets/**/*.scss"]
+          files: ["src/stylesheets/**/*.scss", "src/demo/signup/stylesheets/**/*.scss"]
           tasks: ["sass"]
       options:
         livereload: true
@@ -84,8 +117,10 @@ module.exports = (grunt) ->
 
   grunt.registerTask "deploy", [], ->
     grunt.loadNpmTasks "grunt-styleguide"
-    grunt.task.run "styleguide"
-
+    grunt.loadNpmTasks "grunt-autoprefixer"
+    grunt.loadNpmTasks "grunt-contrib-csslint"
+    grunt.loadNpmTasks "grunt-html"
+    grunt.task.run "styleguide", "autoprefixer", "csslint", "htmllint"
 
   grunt.registerTask "slim", [], ->
     grunt.loadNpmTasks "grunt-slim"

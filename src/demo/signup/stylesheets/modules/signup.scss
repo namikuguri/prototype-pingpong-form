@@ -1,0 +1,111 @@
+// # Signup Page
+// Signup ページで使うモジュール。
+
+.signup {
+  border: 1px solid #eeedeb;
+  background-color: #fff;
+}
+
+.signup-header {
+}
+
+.signup-body {
+  padding: 18px 24px;
+}
+
+.signup-footer {
+  padding: 18px 24px;
+  border-top: 1px solid #d0cfcd;
+  background-color: #f0f2f4;
+}
+
+// # Signup - title
+// ```
+// <h1 class="signup-title">新規会員申し込み</h1>
+// ```
+
+.signup-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 8px 24px;
+  color: #fff;
+  border-bottom: 1px solid #b24f31;
+  background-color: #db4c22;
+  letter-spacing: .1em;
+  text-indent: -.1em;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.4);
+}
+
+// # Signup - Flow
+// ```
+// <div class="signup-flow"><ol class="signup-flow-list"><li class="is-flow-active">入力</li><li>確認</li><li>完了</li></ol></div>
+// ```
+
+.signup-flow {
+  padding: 8px 24px;
+  border-bottom: 1px solid #d0cfcd;
+  background-color: #f0f2f4;
+}
+
+.signup-flow-list {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 0;
+  width: 399px;
+  border-top: 1px solid #d0cfcd;
+  list-style: none;
+  li {
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    width: 133px;
+    color: #d0cfcd;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -16px;
+      width: 8px;
+      height: 8px;
+      border: 4px solid #f0f2f4;
+      border-radius: 50%;
+      background-color: #d0cfcd;
+    }
+    &:nth-child(1) {
+      &:before {
+        left: 5px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: -9px;
+        display: block;
+        width: 5px;
+        height: 1px;
+        background-color: #f0f2f4;
+      }
+    }
+    &:nth-child(2) {
+      text-align: center;
+      &:before {
+        left: 44%;
+      }
+    }
+    &:nth-child(3) {
+      text-align: right;
+      &:before {
+        right: 5px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: -9px;
+        right: 0;
+        display: block;
+        width: 5px;
+        height: 1px;
+        background-color: #f0f2f4;
+      }
+    }
+  }
+}

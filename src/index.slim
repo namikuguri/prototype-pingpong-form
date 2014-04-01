@@ -3,18 +3,19 @@ html lang="ja"
   head
     title PingPong Form ( Prototype ) 
     meta name="keywords" content="template language"
-    link rel="stylesheet" href="assets/stylesheets/base/base.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/layout/layout.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/modules/header.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/modules/main.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/modules/footer.css" media="all"
-    link rel="stylesheet" href="assets/stylesheets/modules/demos.css" media="all"
+    link rel="stylesheet" href="stylesheets/base/base.css" media="all"
+    link rel="stylesheet" href="stylesheets/layout/layout.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/header.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/main.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/footer.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/demos.css" media="all"
   body
     header
       div class="header-inner"
         div class="site-title"
           h1 class="site-title-logo"
-            | PingPong Form ( Prototype ) 
+            a href="./" class="site-title-logo-link"
+              | PingPong Form ( Prototype ) 
           strong class="site-title-description"
             | Form with interactive operability
 
@@ -26,11 +27,8 @@ html lang="ja"
         div class="demos-body"
           ul class="demos-list"
             li
-              a href="../demo/signup/signup.html"
-                | Sign up Form
-            li
-              a href="../demo/signin/signin.html"
-                | Sign in Form
+              a href="../demo/signup/"
+                | 新規会員登録フォーム
 
     footer
       div class="footer-inner"

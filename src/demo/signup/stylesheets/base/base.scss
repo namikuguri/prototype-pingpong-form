@@ -1,0 +1,194 @@
+// # Base
+// ここではできるだけ User Agent Style に上書きするようなスタイルのみ書くように心がけましょう
+
+@import '../partial/colors';
+
+html {
+  height: 100%;
+}
+
+// # Body
+// ## Font, Line Height
+// ```
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<br>猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<br>猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// ```
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, sans-serif;
+  font-size: 14px;
+  color: $site-color;
+  line-height: 1.618;
+}
+
+// # Heading
+// ```
+// <h1>Heading Level 1</h1>
+// <h2>Heading Level 2</h2>
+// <h3>Heading Level 3</h3>
+// <h4>Heading Level 4</h4>
+// ```
+
+h1 {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+// # Emphasis
+// ```
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<em>鳥かぶり</em>、猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// ```
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+// # Anchor Link
+// ## Default
+// ```
+// <p><a href="">Anchor Link</a></p>
+// <p><a href="" class=":hover">Anchor Link:hover</a></p>
+// <p><a href="" class=":visited">Anchor Link:visited</a></p>
+// ```
+
+a {
+  color: $site-link-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $site-link-color;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $site-link-color-visited;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+// # List
+// ## Unordered List
+// ```
+// <ul><li>List 1</li><li>List 2</li><li>List 3</li></ul>
+// ```
+
+ul {
+  padding-left: 15px;
+}
+
+// ## Ordered List
+// ```
+// <ol><li>List 1</li><li>List 2</li><li>List 3</li></ol>
+// ```
+
+ol {
+  padding-left: 20px;
+}
+
+// # Form
+// ## Fieldset, Legend
+// ```
+// <fieldset><legend>Legend</legend><label>Label</label></fieldset>
+// ```
+
+fieldset {
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+// ## Input, Textarea, Select, Button
+// ### Input type="text"
+// ```
+// <label for="input-text">label</label><input type="text" id="input-text" name="input-text">
+// ```
+// ### Input type="email"
+// ```
+// <label for="input-email">label</label><input type="email" id="input-email" name="input-email">
+// ```
+// ### Input type="tel"
+// ```
+// <label for="input-tel">label</label><input type="tel" id="input-tel" name="input-tel">
+// ```
+// ### Input type="password"
+// ```
+// <label for="input-password">label</label><input type="password" id="input-password" name="input-password">
+// ```
+// ### Input type="file"
+// ```
+// <label for="input-file">label</label><input type="file" id="input-file" name="input-file">
+// ```
+// ### Select
+// ```
+// <label for="select">label</label><select id="select" name="select"><option value="">-- 選択してください --</option><option value="1">option 1</option><option value="2">option 2</option><option value="3">option 3</option></select>
+// ```
+// ### Textarea
+// ```
+// <label for="textarea">label</label><textarea id="textarea" name="textarea"></textarea>
+// ```
+// ### Button
+// ```
+// <button type="button">次の画面に進む</button>
+// ```
+
+
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  padding: 5px 8px;
+}
+
+input[type="file"] {
+  padding: 2px;
+  &::-webkit-file-upload-button {
+    padding: .1em .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    background-image: gradient(linear, left top, left bottom, from(#e7e7e7), to(#fff));
+    box-shadow: inset 10px 0 12px -12px rgba(0,0,0,.4), inset -10px 0 12px -12px rgba(0,0,0,.4);
+    line-height: normal;
+    &:focus {
+      outline-offset: -2px;
+    }
+  }
+}
+
+select {
+  border: 1px solid #ccc;
+}
