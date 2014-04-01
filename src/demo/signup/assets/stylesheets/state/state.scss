@@ -1,0 +1,26 @@
+.is-form-field-footer-status-check {
+  .form-field-footer-status-icon {
+    border-color: #53aa54;
+    background-color: #65ba65;
+  }
+}
+
+.is-form-field-footer-status-error {
+  .form-field-footer-status-icon {
+    border-color: #ba424c;
+    background-color: #c75761;
+  }
+}
+
+.is-form-field-body-error {
+  background-color: #fddadd;
+}
+
+.signup-header-flow-list {
+  .is-flow-active {
+    color: #000;
+    &:before {
+      background-color: #ee4029;
+    }
+  }
+}

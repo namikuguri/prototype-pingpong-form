@@ -54,10 +54,35 @@ ul {
 ol {
   padding-left: 19px; }
 
-input[type="text"] {
+input,
+textarea,
+select {
   margin: 0;
-  padding: 5px 8px;
+  font: inherit;
   font-size: 14px; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  padding: 5px 8px; }
+
+input[type="file"] {
+  padding: 2px; }
+  input[type="file"]::-webkit-file-upload-button {
+    padding: .1em .5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e7e7e7), to(white));
+    box-shadow: inset 10px 0 12px -12px rgba(0, 0, 0, 0.4), inset -10px 0 12px -12px rgba(0, 0, 0, 0.4);
+    line-height: normal; }
+    input[type="file"]::-webkit-file-upload-button:focus {
+      outline-offset: -2px; }
+
+select {
+  border: 1px solid #ccc; }
 
 fieldset {
   padding: 0;
