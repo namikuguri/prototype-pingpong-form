@@ -55,6 +55,16 @@ module.exports = (grunt) ->
           ext: ".css"
         ]
 
+    # Make Style Guide ( StyleDocco )
+    styleguide:
+      dist:
+        name: "Style Guide"
+        options:
+          framework:
+            name: "styledocco"
+            options: preprocessor: "sass"
+        files: "docs/styledocco/": "src/demo/signup/assets/stylesheets/**/*.scss"
+
     # Monitoring files, and Do browser live reload
     watch:
       slim:
@@ -72,6 +82,11 @@ module.exports = (grunt) ->
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.task.run "connect", "watch"
 
+  grunt.registerTask "deploy", [], ->
+    grunt.loadNpmTasks "grunt-styleguide"
+    grunt.task.run "styleguide"
+
+
   grunt.registerTask "slim", [], ->
     grunt.loadNpmTasks "grunt-slim"
     grunt.task.run "slim"
@@ -79,3 +94,7 @@ module.exports = (grunt) ->
   grunt.registerTask "sass", [], ->
     grunt.loadNpmTasks "grunt-contrib-sass"
     grunt.task.run "sass"
+
+  grunt.registerTask "styleguide", [], ->
+    grunt.loadNpmTasks "grunt-styleguide"
+    grunt.task.run "styleguide"

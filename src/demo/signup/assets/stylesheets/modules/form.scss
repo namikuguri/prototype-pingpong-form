@@ -1,3 +1,22 @@
+// # Form Modules
+// フォームで使うモジュール。
+
+// # Pagenation Buttons
+// ## Next Button
+// ```
+// <button class="form-parts-btn-next" type="submit">確認画面に進む<span class="form-parts-btn-separation"></span><i class="fa fa-chevron-right"></i></button>
+// ```
+
+// # Input Required, Optional
+// ## Required
+// ```
+// <small class="form-field-header-required">必須</small>
+// ```
+// ## Optional
+// ```
+// <small class="form-field-header-optional">任意</small>
+// ```
+
 .form {
 }
 
