@@ -47,6 +47,7 @@
 }
 
 .form-field-header-label {
+  display: inline;
   font-size: 18px;
 }
 
@@ -74,13 +75,6 @@
   font-size: 14px;
 }
 
-.form-field-body-input {
-  display: inline-block;
-  padding: 5px;
-  border: 1px solid #eeedeb;
-  background-color: #fff;
-}
-
 .form-field-footer {
   padding: 5px 8px;
   border: 1px solid #eeedeb;
@@ -91,19 +85,83 @@
 }
 
 .form-field-footer-status {
+  overflow: hidden;
+  min-height: 26px;
 }
 
 .form-field-footer-status-icon {
+  float: left;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #818181;
+  border-radius: 50%;
+  background-color: #909090;
+  text-align: center;
+  line-height: 26px;
 }
 
 .form-field-footer-status-message {
   margin-top: 0;
   margin-bottom: 0;
+  line-height: 26px;
+  vertical-align: middle;
 }
 
 .form-parts-text {
   border-width: 1px;
   border-color: #eeedeb;
+  width: 400px;
+}
+
+.form-parts-textarea {
+  border-width: 1px;
+  border-style: inset;
+  border-color: #eeedeb;
+  width: 600px;
+  height: 80px;
+}
+
+.form-parts-radio {
+  margin-right: 5px;
+}
+
+.form-parts-checkbox {
+  margin-right: 5px;
+}
+
+.form-parts-select {
+}
+
+.form-parts-file {
+}
+
+.form-parts-cover {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #eeedeb;
+  background-color: #fff;
+}
+
+.form-parts-cover-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px;
+    border: 1px solid #eeedeb;
+    background-color: #fff;
+  }
+}
+
+.form-parts-cover-list-specials {
+  li {
+    width: 200px;
+    margin-bottom: 8px;
+  }
 }
 
 .form-parts-btn-next {
