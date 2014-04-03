@@ -62,7 +62,8 @@ module.exports = (grunt) ->
           name: "Style Guide"
           framework:
             name: "styledocco"
-            options: preprocessor: "sass"
+            options:
+              preprocessor: "sass"
           template:
             include: ["vendor/font-awesome/css/font-awesome.min.css",
                       "vendor/font-awesome/fonts/fontawesome-webfont.eot",
@@ -70,7 +71,7 @@ module.exports = (grunt) ->
                       "vendor/font-awesome/fonts/fontawesome-webfont.ttf",
                       "vendor/font-awesome/fonts/fontawesome-webfont.woff",
                       "vendor/font-awesome/fonts/FontAwesome.otf"]
-        files: "docs/styledocco/": "src/demo/signup/stylesheets/**/*.scss"
+        files: "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"
 
     # Lint HTML
     htmllint:
