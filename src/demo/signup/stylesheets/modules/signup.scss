@@ -37,6 +37,7 @@
 }
 
 // # Signup - Flow
+// `is-flow-active` は状態に関するスタイル、ということで `state.css` に書いてある。
 // ```
 // <div class="signup-flow"><ol class="signup-flow-list"><li class="is-flow-active">入力</li><li>確認</li><li>完了</li></ol></div>
 // ```
