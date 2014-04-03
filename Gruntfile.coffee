@@ -116,11 +116,14 @@ module.exports = (grunt) ->
     grunt.task.run "connect", "watch"
 
   grunt.registerTask "deploy", [], ->
-    grunt.loadNpmTasks "grunt-styleguide"
     grunt.loadNpmTasks "grunt-autoprefixer"
     grunt.loadNpmTasks "grunt-contrib-csslint"
     grunt.loadNpmTasks "grunt-html"
-    grunt.task.run "styleguide", "autoprefixer", "csslint", "htmllint"
+    grunt.task.run "autoprefixer", "csslint", "htmllint"
+
+  grunt.registerTask "doc", [], ->
+    grunt.loadNpmTasks "grunt-styleguide"
+    grunt.task.run "styleguide"
 
   grunt.registerTask "slim", [], ->
     grunt.loadNpmTasks "grunt-slim"
@@ -129,7 +132,3 @@ module.exports = (grunt) ->
   grunt.registerTask "sass", [], ->
     grunt.loadNpmTasks "grunt-contrib-sass"
     grunt.task.run "sass"
-
-  grunt.registerTask "styleguide", [], ->
-    grunt.loadNpmTasks "grunt-styleguide"
-    grunt.task.run "styleguide"
