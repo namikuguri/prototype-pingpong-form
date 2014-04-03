@@ -1,0 +1,46 @@
+// # State
+// 状態に伴うスタイルの変更。
+
+@import '../partial/colors';
+
+// # Form Filed Status
+// ## Status Check
+// ```
+// <div class="form-field"><div class="form-field-body"><small class="form-input-note">入力に関する注釈や例文</small><div class="form-input-cover"><input class="form-input-text" placeholder="Placeholder" type="text"></div></div><div class="form-field-footer"><div class="form-input-status is-form-input-status-check"><div class="form-input-status-icon"><i class="icon fa fa-check"></i></div><p class="form-input-status-message">入力が完了しました。</p></div></div></div>
+// ```
+
+.is-form-input-status-check {
+  .form-input-status-icon {
+    border-color: $safety-border-color;
+    background-color: $safety-bg-color;
+  }
+}
+
+// ## Status Error
+// ```
+// <div class="form-field"><div class="form-field-body is-form-input-error"><small class="form-input-note">入力に関する注釈や例文</small><div class="form-input-cover"><input class="form-input-text" placeholder="Placeholder" type="text"></div></div><div class="form-field-footer"><div class="form-input-status is-form-input-status-error"><div class="form-input-status-icon"><i class="icon fa fa-minus"></i></div><p class="form-input-status-message">入力欄が空白です。</p></div></div></div>
+// ```
+.is-form-input-error {
+  background-color: $error-pale-bg-color;
+}
+
+.is-form-input-status-error {
+  .form-input-status-icon {
+    border-color: $error-border-color;
+    background-color: $error-bg-color;
+  }
+}
+
+// # Sign up Flow Active Item
+// ```
+// <div class="signup-flow"><ol class="signup-flow-list"><li class="is-flow-active">入力</li><li>確認</li><li>完了</li></ol></div>
+// ```
+
+.signup-flow-list {
+  .is-flow-active {
+    color: #000;
+    &:before {
+      background-color: $active-bg-color;
+    }
+  }
+}

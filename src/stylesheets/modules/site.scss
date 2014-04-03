@@ -1,0 +1,45 @@
+// # Site
+// サイトに関する情報
+
+// # Site - Title
+// ```
+// <div class="site-title"><h1 class="site-title-logo"><a class="site-title-logo-link" href="../../index.html">PingPong Form ( Prototype ) </a></h1><strong class="site-title-description">Form with interactive operability</strong></div>
+// ```
+
+.site-title {
+  margin: 8px 0;
+}
+
+.site-title-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-title-logo-link {
+  color: #000;
+  &:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  &:visited {
+    color: #000;
+  }
+}
+
+.site-title-description {
+  font-weight: normal;
+}
+
+// # Site - Author
+// ```
+// <address class="site-author">Made by<a class="site-author-account" href="https://github.com/thleap" target="_blank">thleap</a></address>
+// ```
+
+.site-author {
+  margin: 8px 0;
+  font-style: normal;
+}
+
+.site-author-account {
+  margin-left: 5px;
+}

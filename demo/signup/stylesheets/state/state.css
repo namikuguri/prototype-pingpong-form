@@ -1,0 +1,15 @@
+.is-form-input-status-check .form-input-status-icon {
+  border-color: #53aa54;
+  background-color: #65ba65; }
+
+.is-form-input-error {
+  background-color: #fddadd; }
+
+.is-form-input-status-error .form-input-status-icon {
+  border-color: #ba424c;
+  background-color: #c75761; }
+
+.signup-flow-list .is-flow-active {
+  color: #000; }
+  .signup-flow-list .is-flow-active:before {
+    background-color: #ee4029; }

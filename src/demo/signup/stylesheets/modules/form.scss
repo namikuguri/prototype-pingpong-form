@@ -1,0 +1,247 @@
+// # Form
+// フォームで使うモジュール。
+
+.form {
+}
+
+.form-fieldset {
+  margin: 18px 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.form-fieldset-legend {
+  margin-bottom: 13px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.form-field {
+  margin: 13px 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #eeedeb;
+}
+
+.form-field-header {
+  margin-bottom: 13px;
+}
+
+.form-field-body {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #f8f9f8;
+}
+
+.form-field-footer {
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  border-top-width: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #f8f9f8;
+}
+
+// # Form - Pagenation
+// `form-pagenation` に含まれる "前の画面に戻る" ボタン、 "次の画面に進む" ボタンは左右に寄せる。
+// 必ず "戻る" は左へ、 "進む" は右に寄せる。
+
+.form-pagination {
+  overflow: hidden;
+  .btn-prev,
+  .btn-prev-form {
+    float: left;
+  }
+  .btn-next,
+  .btn-next-form {
+    float: right;
+  }
+}
+
+// # Form - Input Label
+// 項目名 `form-input-label` と、項目名に関する補足 `form-input-label-note` 。
+// 
+// ```
+// <label class="form-input-label" for="">備考欄<small class="form-input-label-note">textarea</small></label>
+// ```
+
+.form-input-label {
+  display: inline;
+  font-size: 18px;
+}
+
+.form-input-label-note {
+  font-size: 14px;
+  &:before {
+    content: "（";
+  }
+  &:after {
+    content: "）";
+  }
+}
+
+// # Form - Input Required and Optional
+// ## Required
+// ```
+// <small class="form-input-required">必須</small>
+// ```
+// ## Optional
+// ```
+// <small class="form-input-optional">任意</small>
+// ```
+
+.form-input-required {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 5px 8px;
+  border: 1px solid #699569;
+  border-radius: 4px;
+  background-color: #77a977;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.form-input-optional {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 5px 8px;
+  border: 1px solid #7f7f7f;
+  border-radius: 4px;
+  background-color: #909090;
+  font-size: 14px;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+// # Form - Input
+// ## Text
+// ```
+// <div class="form-input-cover"><input class="form-input-text" placeholder="Placeholder" type="text"></div>
+// ```
+// ## Textarea
+// ```
+// <div class="form-input-cover"><textarea class="form-input-textarea" id="" name="" placeholder="Placeholder"></textarea></div>
+// ```
+// ## Chackbox
+// ```
+// <ul class="form-input-cover-list form-input-cover-list-baldness-troubles"><li><label><input class="form-input-checkbox" id="trouble1" name="baldness_troubles" type="checkbox">最近抜け毛が増えてきたと思う..</label></li><li><label><input class="form-input-checkbox" id="trouble2" name="baldness_troubles" type="checkbox">1年後の髪の毛が心配だ..</label></li><li><label><input class="form-input-checkbox" id="trouble3" name="baldness_troubles" type="checkbox">親父がハゲてるから遺伝が..</label></li><li><label><input class="form-input-checkbox" id="trouble4" name="baldness_troubles" type="checkbox">整髪剤をつけるのが恐い..</label></li><li><label><input class="form-input-checkbox" id="trouble5" name="baldness_troubles" type="checkbox">最近排水口に溜まる髪の毛が多い..</label></li><li><label><input class="form-input-checkbox" id="trouble6" name="baldness_troubles" type="checkbox">しゃべってる相手の目線が上すぎる..</label></li></ul>
+// ```
+// ## Radio
+// ```
+// <div class="form-input-cover-list"><li><label><input class="form-input-radio" id="" name="" type="radio" value="1">男性</label></li><li><label><input class="form-input-radio" id="" name="" type="radio" value="2">女性</label></li></div>
+// ```
+// ## Select
+// ```
+// <div class="form-input-cover"><select class="form-input-select" id="prefecture" name="prefecture"><option value="">-- 選択してください --</option><option value="1">北海道 </option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">山形県</option></select></div>
+// ```
+// ## File
+// ```
+// <div class="form-input-cover"><input class="form-input-file" id="profile-pic" name="profile-pic" type="file"></div>
+// ```
+
+.form-input-text {
+  border-width: 1px;
+  border-color: #eeedeb;
+  width: 400px;
+}
+
+.form-input-textarea {
+  border-width: 1px;
+  border-style: inset;
+  border-color: #eeedeb;
+  width: 600px;
+  height: 80px;
+}
+
+.form-input-radio {
+  margin-right: 5px;
+}
+
+.form-input-checkbox {
+  margin-right: 5px;
+}
+
+.form-input-select {
+}
+
+.form-input-file {
+}
+
+.form-input-cover {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #eeedeb;
+  background-color: #fff;
+}
+
+.form-input-cover-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 8px;
+    padding: 5px;
+    border: 1px solid #eeedeb;
+    background-color: #fff;
+  }
+}
+
+.form-input-cover-list-baldness-troubles {
+  li {
+    width: 47%;
+    margin-bottom: 8px;
+  }
+}
+
+// # Form - Input Note
+// ```
+// <small class="form-input-note">入力に関する注釈や例文</small>
+// ```
+
+.form-input-note {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+// # Form - Input Status
+// `is-form-input-status-error` か `is-form-input-status-check` といった "状態" に関するスタイルが必ず伴う。
+// 
+// ```
+// <div class="form-input-status is-form-input-status-error"><div class="form-input-status-icon"><i class="icon fa fa-minus"></i></div><p class="form-input-status-message">入力欄が空白です。</p></div>
+// ```
+
+.form-input-status {
+  overflow: hidden;
+  min-height: 26px;
+}
+
+.form-input-status-icon {
+  float: left;
+  margin-right: 5px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #818181;
+  border-radius: 50%;
+  background-color: #909090;
+  text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.form-input-status-message {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 26px;
+  vertical-align: middle;
+}

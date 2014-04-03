@@ -1,0 +1,24 @@
+.site-title {
+  margin: 8px 0; }
+
+.site-title-logo {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.site-title-logo-link {
+  color: #000; }
+  .site-title-logo-link:hover {
+    color: #000;
+    text-decoration: none; }
+  .site-title-logo-link:visited {
+    color: #000; }
+
+.site-title-description {
+  font-weight: normal; }
+
+.site-author {
+  margin: 8px 0;
+  font-style: normal; }
+
+.site-author-account {
+  margin-left: 5px; }

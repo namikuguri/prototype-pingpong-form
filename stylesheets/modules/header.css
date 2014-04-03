@@ -1,0 +1,19 @@
+.header-inner {
+  margin: 0 auto;
+  padding: 8px 0;
+  width: 800px; }
+
+.site-title-logo {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.site-title-logo-link {
+  color: #000; }
+  .site-title-logo-link:hover {
+    color: #000;
+    text-decoration: none; }
+  .site-title-logo-link:visited {
+    color: #000; }
+
+.site-title-description {
+  font-weight: normal; }

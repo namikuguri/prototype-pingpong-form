@@ -1,0 +1,107 @@
+// # Base
+// ここではできるだけ User Agent Style に上書きするようなスタイルのみ書くように心がけましょう
+
+@import '../partial/colors';
+
+html {
+  height: 100%;
+}
+
+// # Font, Line Height
+// ```
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<br>猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<br>猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// ```
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family:  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, sans-serif;
+  font-size: 14px;
+  color: $site-color;
+  line-height: 1.618;
+}
+
+// # Heading
+// ```
+// <h1>Heading Level 1</h1>
+// <h2>Heading Level 2</h2>
+// <h3>Heading Level 3</h3>
+// <h4>Heading Level 4</h4>
+// ```
+
+h1 {
+  font-size: 24px;
+  line-height: 1.35;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+// # Emphasis
+// ```
+// <p>猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、猫かぶり犬かぶり、<em>鳥かぶり</em>、猫かぶり犬かぶり、猫かぶり犬かぶり</p>
+// ```
+
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+// # Anchor Link
+// ## Default
+// ```
+// <p><a href="">Anchor Link</a></p>
+// <p><a href="" class=":hover">Anchor Link:hover</a></p>
+// <p><a href="" class=":visited">Anchor Link:visited</a></p>
+// ```
+
+a {
+  color: $site-link-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: $site-link-color;
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $site-link-color-visited;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+img {
+  vertical-align: middle;
+}
+
+// # List
+// ## Unordered List
+// ```
+// <ul><li>List 1</li><li>List 2</li><li>List 3</li></ul>
+// ```
+
+ul {
+  padding-left: 15px;
+}
+
+// ## Ordered List
+// ```
+// <ol><li>List 1</li><li>List 2</li><li>List 3</li></ol>
+// ```
+
+ol {
+  padding-left: 20px;
+}
