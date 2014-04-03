@@ -26,20 +26,17 @@ $ grunt deploy
 `/* hoge */` ではなく `// hoge` の形式でコメントを書く。( `/* hoge */` の形式で書くとコンパイル後の CSS にコメントとして残ってしまうため。 )
 
 Style Guide ページでは、`#form-modules` 内の `.docs` 、`.codes` がちゃんと関連づくようにスタイルガイドを書く。
-以下のように書くと `form-field-header-optional` が `Form Required` の項目内に入ってしまうので良くない:
+以下のように書くと `form-input-checkbox` が `Form Input Text` の項目内に入ってしまうので良くない:
 
 ```css
-// # Form Parts Text
-// ```
-// <div class="form-parts-cover"><input class="form-parts-text" placeholder="Placeholder" type="text"></div>
-// ```
-.form-parts-text {
+// # Form Input Text
+.form-input-text {
   ...
 }
 
-.form-parts-checkbox {
+.form-input-checkbox {
   ...
 }
 
-// # hoge
+// # Form Input Radio
 ```
