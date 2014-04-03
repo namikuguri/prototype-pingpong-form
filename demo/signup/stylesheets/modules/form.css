@@ -7,7 +7,9 @@
 .form-fieldset-legend {
   margin-bottom: 13px;
   width: 100%;
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .1em; }
 
 .form-field {
   margin: 13px 0;
@@ -112,8 +114,8 @@
     border: 1px solid #eeedeb;
     background-color: #fff; }
 
-.form-input-cover-list-specials li {
-  width: 30%;
+.form-input-cover-list-baldness-troubles li {
+  width: 47%;
   margin-bottom: 8px; }
 
 .form-input-note {

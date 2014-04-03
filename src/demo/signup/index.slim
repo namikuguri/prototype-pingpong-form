@@ -43,53 +43,11 @@ html lang="ja"
                   div class="form-field-header"
                     small class="form-input-required"
                       | 必須
-                    label class="form-input-label"
-                      | 項目名
-                      small class="form-input-label-note"
-                        a href=""
-                          | 項目名に関する補足
-                  div class="form-field-body is-form-input-error"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
-                    div class="form-input-cover"
-                      input class="form-input-text" type="text" placeholder="Placeholder"
-                  div class="form-field-footer"
-                    div class="form-input-status is-form-input-status-error"
-                      div class="form-input-status-icon"
-                        i class="icon fa fa-minus"
-                      p class="form-input-status-message"
-                        | 入力欄が空白です。
-                div class="form-field"
-                  div class="form-field-header"
-                    small class="form-input-optional"
-                      | 任意
-                    label class="form-input-label"
-                      | 項目名
-                      small class="form-input-label-note"
-                        a href=""
-                          | 項目名に関する補足
-                  div class="form-field-body"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
-                    div class="form-input-cover"
-                      input class="form-input-text" type="text" placeholder="Placeholder"
-                  div class="form-field-footer"
-                    div class="form-input-status is-form-input-status-check"
-                      div class="form-input-status-icon"
-                        i class="icon fa fa-check"
-                      p class="form-input-status-message"
-                        | 入力が完了しました。
-                div class="form-field"
-                  div class="form-field-header"
-                    small class="form-input-required"
-                      | 必須
                     label class="form-input-label" for="name"
                       | お名前
-                      small class="form-input-label-note"
-                        | input type="text"
                   div class="form-field-body"
                     small class="form-input-note"
-                      | 入力に関する注釈や例文
+                      | 例）山田 太郎
                     div class="form-input-cover"
                       input class="form-input-text" type="text" id="name" name="name"  placeholder="Placeholder"
                   div class="form-field-footer"
@@ -98,45 +56,13 @@ html lang="ja"
                   div class="form-field-header"
                     small class="form-input-required"
                       | 必須
-                    label class="form-input-label" for="email"
-                      | メールアドレス
-                      small class="form-input-label-note"
-                        | input type="email"
+                    label class="form-input-label" for="name_kana"
+                      | ふりがな
                   div class="form-field-body"
                     small class="form-input-note"
-                      | 入力に関する注釈や例文
+                      | 例）やまだたろう
                     div class="form-input-cover"
-                      input class="form-input-text" type="email" id="email" name="email" placeholder="Placeholder"
-                  div class="form-field-footer"
-                    div class="form-input-status"
-                div class="form-field"
-                  div class="form-field-header"
-                    small class="form-input-required"
-                      | 必須
-                    label class="form-input-label" for="password"
-                      | パスワード
-                      small class="form-input-label-note"
-                        | input type="password"
-                  div class="form-field-body"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
-                    div class="form-input-cover"
-                      input class="form-input-text" type="password" id="password" name="password" placeholder="Placeholder"
-                  div class="form-field-footer"
-                    div class="form-input-status"
-                div class="form-field"
-                  div class="form-field-header"
-                    small class="form-input-required"
-                      | 必須
-                    label class="form-input-label" for="profile-pic"
-                      | プロフィール画像
-                      small class="form-input-label-note"
-                        | input type="file"
-                  div class="form-field-body"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
-                    div class="form-input-cover"
-                      input class="form-input-file" type="file" id="profile-pic" name="profile-pic"
+                      input class="form-input-text" type="text" id="name_kana" name="name_kana"  placeholder="Placeholder"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -145,11 +71,7 @@ html lang="ja"
                       | 必須
                     label class="form-input-label"
                       | 性別
-                      small class="form-input-label-note"
-                        | input type="radio"
                   div class="form-field-body"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
                     ul class="form-input-cover-list"
                       li
                         label
@@ -165,38 +87,46 @@ html lang="ja"
                   div class="form-field-header"
                     small class="form-input-required"
                       | 必須
-                    label class="form-input-label"
-                      | 得意分野
-                      small class="form-input-label-note"
-                        | input type="checkbox"
+                    label class="form-input-label" for="email"
+                      | メールアドレス
                   div class="form-field-body"
                     small class="form-input-note"
-                      | 入力に関する注釈や例文
-                    ul class="form-input-cover-list form-input-cover-list-specials"
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special1" name="specials"
-                          | トップス
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special2" name="specials"
-                          | ジェケット・アウター
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special3" name="specials"
-                          | シューズ
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special4" name="specials"
-                          | アクセサリー
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special5" name="specials"
-                          | パンツ
-                      li
-                        label
-                          input class="form-input-checkbox" type="checkbox" id="special6" name="specials"
-                          | オールインワン
+                      | 例）test@example.com
+                    div class="form-input-cover"
+                      input class="form-input-text" type="email" id="email" name="email" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="tel"
+                      | 電話番号
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 固定電話、携帯電話、いずれもOKです（ただし日本国内の回線に限ります）。
+                    small class="form-input-note"
+                      | 例）000-1111-2222 、00011112222
+                    div class="form-input-cover"
+                      input class="form-input-text" type="tel" id="tel" name="tel" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+              fieldset class="form-fieldset"
+                legend class="form-fieldset-legend"
+                  | 住所情報
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="zipcode"
+                      | 郵便番号
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 郵便番号を入力して頂くと、自動で市区町村まで入力されます。
+                    small class="form-input-note"
+                      | 例）000-1111 、0001111
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" id="zipcode" name="zipcode" placeholder="Placeholder"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -205,11 +135,7 @@ html lang="ja"
                       | 必須
                     label class="form-input-label" for="prefecture"
                       | 都道府県
-                      small class="form-input-label-note"
-                        | select
                   div class="form-field-body"
-                    small class="form-input-note"
-                      | 入力に関する注釈や例文
                     div class="form-input-cover"
                       select class="form-input-select" id="prefecture" name="prefecture"
                         option value="" -- 選択してください --
@@ -218,6 +144,130 @@ html lang="ja"
                         option value="3" 岩手県
                         option value="4" 宮城県
                         option value="5" 山形県
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="address_city"
+                      | 市区町村と番地
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 例）千代田区千代田1-1
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" id="address_city" name="address_city"  placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="address_city_under"
+                      | マンション名
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 例）チヨダビル101号室
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" id="address_city_under" name="address_city_under"  placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+              fieldset class="form-fieldset"
+                legend class="form-fieldset-legend"
+                  | アカウントの登録
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="account_name"
+                      | アカウント名
+                      small class="form-input-label-note"
+                        | サービス内で使用される名前
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 英数字のみでご入力ください。
+                    div class="form-input-cover"
+                      input class="form-input-text" type="text" id="account_name" name="account_name"  placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="profile-pic"
+                      | アカウント画像
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | ファイルの拡張子は jpg, png, gif のいずれかからお選びください。
+                    div class="form-input-cover"
+                      input class="form-input-file" type="file" id="profile-pic" name="profile-pic"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="password"
+                      | パスワード
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 半角英数字のみで、6文字以上のものを入力ください。
+                    div class="form-input-cover"
+                      input class="form-input-text" type="password" id="password" name="password" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
+                    label class="form-input-label" for="password_confirmation"
+                      | パスワードご確認用
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | ご入力防止の為、上記と同じパスワードを再度ご入力ください。
+                    div class="form-input-cover"
+                      input class="form-input-text" type="password" id="password_confirmation" name="password_confirmation" placeholder="Placeholder"
+                  div class="form-field-footer"
+                    div class="form-input-status"
+              fieldset class="form-fieldset"
+                legend class="form-fieldset-legend"
+                  | その他
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-optional"
+                      | 任意
+                    label class="form-input-label"
+                      | 頭皮に関するアンケート
+                      small class="form-input-label-note"
+                        | input type="checkbox"
+                  div class="form-field-body"
+                    small class="form-input-note"
+                      | 入力に関する注釈や例文
+                    ul class="form-input-cover-list form-input-cover-list-baldness-troubles"
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble1" name="baldness_troubles"
+                          | 最近抜け毛が増えてきたと思う..
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble2" name="baldness_troubles"
+                          | 1年後の髪の毛が心配だ..
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble3" name="baldness_troubles"
+                          | 親父がハゲてるから遺伝が..
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble4" name="baldness_troubles"
+                          | 整髪剤をつけるのが恐い..
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble5" name="baldness_troubles"
+                          | 最近排水口に溜まる髪の毛が多い..
+                      li
+                        label
+                          input class="form-input-checkbox" type="checkbox" id="trouble6" name="baldness_troubles"
+                          | しゃべってる相手の目線が上すぎる..
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -237,10 +287,6 @@ html lang="ja"
                     div class="form-input-status"
           div class="signup-footer"
             div class="form-pagination"
-              button type="button" class="button btn-prev-form"
-                i class="fa fa-chevron-left"
-                span class="btn-separation"
-                | 入力内容を訂正する
               button type="submit" class="button btn-next-form"
                 | 確認画面に進む
                 span class="btn-separation"

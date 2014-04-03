@@ -15,6 +15,8 @@
   margin-bottom: 13px;
   width: 100%;
   font-size: 24px;
+  font-weight: 700;
+  letter-spacing: .1em;
 }
 
 .form-field {
@@ -129,7 +131,7 @@
 // ```
 // ## Chackbox
 // ```
-// <ul class="form-input-cover-list form-input-cover-list-specials"><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">トップス</label></li><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">ジェケット・アウター</label></li><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">シューズ</label></li><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">アクセサリー</label></li><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">パンツ</label></li><li><label><input class="form-input-checkbox" id="" name="" type="checkbox">オールインワン</label></li></ul>
+// <ul class="form-input-cover-list form-input-cover-list-baldness-troubles"><li><label><input class="form-input-checkbox" id="trouble1" name="baldness_troubles" type="checkbox">最近抜け毛が増えてきたと思う..</label></li><li><label><input class="form-input-checkbox" id="trouble2" name="baldness_troubles" type="checkbox">1年後の髪の毛が心配だ..</label></li><li><label><input class="form-input-checkbox" id="trouble3" name="baldness_troubles" type="checkbox">親父がハゲてるから遺伝が..</label></li><li><label><input class="form-input-checkbox" id="trouble4" name="baldness_troubles" type="checkbox">整髪剤をつけるのが恐い..</label></li><li><label><input class="form-input-checkbox" id="trouble5" name="baldness_troubles" type="checkbox">最近排水口に溜まる髪の毛が多い..</label></li><li><label><input class="form-input-checkbox" id="trouble6" name="baldness_troubles" type="checkbox">しゃべってる相手の目線が上すぎる..</label></li></ul>
 // ```
 // ## Radio
 // ```
@@ -137,7 +139,7 @@
 // ```
 // ## Select
 // ```
-// <div class="form-input-cover"><select class="form-input-select" id="" name=""><option value="">-- 選択してください --</option><option value="1">北海道 </option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">山形県</option></select></div>
+// <div class="form-input-cover"><select class="form-input-select" id="prefecture" name="prefecture"><option value="">-- 選択してください --</option><option value="1">北海道 </option><option value="2">青森県</option><option value="3">岩手県</option><option value="4">宮城県</option><option value="5">山形県</option></select></div>
 // ```
 // ## File
 // ```
@@ -193,9 +195,9 @@
   }
 }
 
-.form-input-cover-list-specials {
+.form-input-cover-list-baldness-troubles {
   li {
-    width: 30%;
+    width: 47%;
     margin-bottom: 8px;
   }
 }
