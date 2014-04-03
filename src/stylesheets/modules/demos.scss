@@ -1,3 +1,6 @@
+// # Demos
+// デモコンテンツに適用するやつ。
+
 .demos {
   border: 1px solid #eeedeb;
   background-color: #fff;
@@ -12,11 +15,21 @@
   padding: 18px 24px;
 }
 
+// # Demos - Title
+// ```
+// <h1 class="demos-title">Demos</h1>
+// ```
+
 .demos-title {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: normal;
 }
+
+// # Demos - List
+// ```
+// <ul class="demos-list"><li><a href="../demo/signup/">新規会員登録フォーム</a></li></ul>
+// ```
 
 .demos-list {
   margin-top: 0;

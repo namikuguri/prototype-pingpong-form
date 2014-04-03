@@ -1,0 +1,10 @@
+// # Partial Colors
+// 濃い => `dark` 、薄い => `pale`
+// 色の情報だけで作った方がいい。`black` とか `dark-black`, `pale-blank` とか。
+// 今 `base.scss` と `state.scss` だけに適用してるけど、
+// 上手い名前付けができないので後で直して他のモジュールとかに適用する。
+
+$site-color: #000;
+$site-link-color: #0076c9;
+$site-link-color-visited: #0076c9;
+$site-bg-color: #43444f;

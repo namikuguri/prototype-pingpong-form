@@ -71,7 +71,7 @@ module.exports = (grunt) ->
                       "vendor/font-awesome/fonts/fontawesome-webfont.ttf",
                       "vendor/font-awesome/fonts/fontawesome-webfont.woff",
                       "vendor/font-awesome/fonts/FontAwesome.otf"]
-        files: "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"
+        files: ["docs/styleguide": "src/stylesheets/**/*.scss", "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"]
 
     # Lint HTML
     htmllint:

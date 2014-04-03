@@ -5,13 +5,12 @@ html lang="ja"
     meta name="keywords" content="template language"
     link rel="stylesheet" href="stylesheets/base/base.css" media="all"
     link rel="stylesheet" href="stylesheets/layout/layout.css" media="all"
-    link rel="stylesheet" href="stylesheets/modules/header.css" media="all"
-    link rel="stylesheet" href="stylesheets/modules/main.css" media="all"
-    link rel="stylesheet" href="stylesheets/modules/footer.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/module.css" media="all"
+    link rel="stylesheet" href="stylesheets/modules/site.css" media="all"
     link rel="stylesheet" href="stylesheets/modules/demos.css" media="all"
   body
     header
-      div class="header-inner"
+      div class="header-module"
         div class="site-title"
           h1 class="site-title-logo"
             a href="./" class="site-title-logo-link"
@@ -31,7 +30,7 @@ html lang="ja"
                 | 新規会員登録フォーム
 
     footer
-      div class="footer-inner"
+      div class="footer-module"
         address class="site-author"
           | Made by
           a href="https://github.com/thleap" target="_blank" class="site-author-account"

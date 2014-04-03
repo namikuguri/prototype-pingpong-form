@@ -5,22 +5,26 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #43444f;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, sans-serif;
   font-size: 14px;
-  color: black; }
+  color: black;
+  line-height: 1.618; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 1.35; }
 
 h2 {
-  font-size: 18px; }
+  font-size: 18px;
+  line-height: 1.35; }
 
 h3 {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.35; }
 
 h4 {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 1.35; }
 
 em {
   font-weight: bold;
@@ -45,4 +49,4 @@ ul {
   padding-left: 15px; }
 
 ol {
-  padding-left: 19px; }
+  padding-left: 20px; }
