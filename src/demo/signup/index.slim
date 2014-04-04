@@ -87,6 +87,30 @@ html lang="ja"
                   div class="form-field-header"
                     small class="form-input-required"
                       | 必須
+                    label class="form-input-label"
+                      | 生年月日
+                  div class="form-field-body"
+                    div class="form-input-cover"
+                      div class="form-input-unit"
+                        small class="form-input-unit-assistance"
+                          | 西暦
+                        input class="form-input-text form-input-text-birth-year" type="number" id="birth_year" name="birth_year"  placeholder="1995"
+                        small class="form-input-unit-assistance"
+                          | 年
+                      div class="form-input-unit"
+                        input class="form-input-text form-input-text-birth-month" type="number" id="birth_month" name="birth_month"  placeholder="12"
+                        small class="form-input-unit-assistance"
+                          | 月
+                      div class="form-input-unit"
+                        input class="form-input-text form-input-text-birth-day" type="number" id="birth_day" name="birth_day"  placeholder="1"
+                        small class="form-input-unit-assistance"
+                          | 日
+                  div class="form-field-footer"
+                    div class="form-input-status"
+                div class="form-field"
+                  div class="form-field-header"
+                    small class="form-input-required"
+                      | 必須
                     label class="form-input-label" for="email"
                       | メールアドレス
                   div class="form-field-body"
