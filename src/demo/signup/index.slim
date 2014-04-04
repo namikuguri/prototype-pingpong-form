@@ -133,7 +133,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 例）000-1111-2222 、00011112222
                     div class="form-input-cover"
-                      input class="form-input-text form-input-text-tel" type="tel" id="tel" name="tel"
+                      input class="form-input-text form-input-text-tel" type="tel" id="tel" name="tel" pattern="0\d{1,4}[\-\s]?\d{1,4}[\-\s]\d{4}"
                   div class="form-field-footer"
                     div class="form-input-status"
               fieldset class="form-fieldset"
@@ -151,7 +151,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 例）000-1111 、0001111
                     div class="form-input-cover"
-                      input class="form-input-text form-input-text-zipcode" type="text" id="zipcode" name="zipcode" onKeyUp="AjaxZip3.zip2addr(this,'','prefecture','address_city');"
+                      input class="form-input-text form-input-text-zipcode" type="text" id="zipcode" name="zipcode" pattern="\d{3}[\-\s]?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','prefecture','address_city');"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -311,7 +311,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 英数字のみでご入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="text" id="account_name" name="account_name"
+                      input class="form-input-text" type="text" id="account_name" name="account_name" pattern="[a-zA-Z0-9]"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -337,7 +337,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 半角英数字のみで、6文字以上のものを入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="password" id="password" name="password"
+                      input class="form-input-text" type="password" id="password" name="password" pattern="[a-zA-Z0-9]{6,500}"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -350,7 +350,7 @@ html lang="ja"
                     small class="form-input-note"
                       | ご入力防止の為、上記と同じパスワードを再度ご入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="password" id="password_confirmation" name="password_confirmation"
+                      input class="form-input-text" type="password" id="password_confirmation" name="password_confirmation" pattern="[a-zA-Z0-9]{6,500}"
                   div class="form-field-footer"
                     div class="form-input-status"
               fieldset class="form-fieldset"
@@ -370,27 +370,27 @@ html lang="ja"
                     ul class="form-input-cover-list form-input-cover-list-baldness-troubles"
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble1" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="1"
                           | 最近抜け毛が増えてきたと思う..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble2" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="2"
                           | 1年後の髪の毛が心配だ..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble3" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="3"
                           | 親父がハゲてるから遺伝が..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble4" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="4"
                           | 整髪剤をつけるのが恐い..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble5" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="5"
                           | 最近排水口に溜まる髪の毛が多い..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble6" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="6"
                           | しゃべってる相手の目線が上すぎる..
                   div class="form-field-footer"
                     div class="form-input-status"
