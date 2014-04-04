@@ -152,6 +152,23 @@
   width: 400px;
 }
 
+.form-input-text-tel {
+  width: 180px;
+}
+
+.form-input-text-zipcode {
+  width: 110px;
+}
+
+.form-input-text-birth-year {
+  width: 70px;
+}
+
+.form-input-text-birth-month,
+.form-input-text-birth-day {
+  width: 50px;
+}
+
 .form-input-textarea {
   border-width: 1px;
   border-style: inset;
@@ -174,12 +191,26 @@
 .form-input-file {
 }
 
+// # Form - Cover, Unit
+// ## Cover
+// `.form-input-XXX` や `.form-input-unit` を囲うもの。
+
+// ### Cover
+// ```
+// <div class="form-input-cover"><input class="form-input-text" id="name" name="name" placeholder="Placeholder" type="text"></div>
+// ```
+
 .form-input-cover {
   display: inline-block;
   padding: 5px;
   border: 1px solid #eeedeb;
   background-color: #fff;
 }
+
+// ### Cover List
+// ```
+// <ul class="form-input-cover-list"><li><label><input class="form-input-radio" id="gender1" name="gender" type="radio" value="1">男性</label></li><li><label><input class="form-input-radio" id="gender2" name="gender" type="radio" value="2">女性</label></li></ul>
+// ```
 
 .form-input-cover-list {
   margin-top: 0;
@@ -200,6 +231,40 @@
     width: 47%;
     margin-bottom: 8px;
   }
+}
+
+// ## Unit
+// Input エリアを分割したいときに使う。Input エリアの単位には `.form-input-unit-assistance` クラスでスタイルを振る。
+// 
+// ```
+// <div class="form-input-unit"><small class="form-input-unit-assistance">西暦</small><input class="form-input-text form-input-text-birth-year" id="birth_year" name="birth_year" placeholder="1995" type="number"><small class="form-input-unit-assistance">年</small></div><div class="form-input-unit"><input class="form-input-text form-input-text-birth-month" id="birth_month" name="birth_month" placeholder="12" type="number"><small class="form-input-unit-assistance">月</small></div><div class="form-input-unit"><input class="form-input-text form-input-text-birth-day" id="birth_day" name="birth_day" placeholder="1" type="number"><small class="form-input-unit-assistance">日</small></div>
+// ```
+
+.form-input-unit {
+  display: inline-block;
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"] {
+    &:focus {
+      outline-offset: -3px;
+    }
+  }
+}
+
+.form-input-unit-assistance {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  background-color: #f8f9f8;
+  font-size: 14px;
+  line-height: 1.22;
+  vertical-align: top;
 }
 
 // # Form - Input Note

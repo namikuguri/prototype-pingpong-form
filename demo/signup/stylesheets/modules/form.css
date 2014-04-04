@@ -83,6 +83,19 @@
   border-color: #eeedeb;
   width: 400px; }
 
+.form-input-text-tel {
+  width: 180px; }
+
+.form-input-text-zipcode {
+  width: 110px; }
+
+.form-input-text-birth-year {
+  width: 70px; }
+
+.form-input-text-birth-month,
+.form-input-text-birth-day {
+  width: 50px; }
+
 .form-input-textarea {
   border-width: 1px;
   border-style: inset;
@@ -117,6 +130,27 @@
 .form-input-cover-list-baldness-troubles li {
   width: 47%;
   margin-bottom: 8px; }
+
+.form-input-unit {
+  display: inline-block;
+  margin-right: 8px; }
+  .form-input-unit:last-child {
+    margin-right: 0; }
+  .form-input-unit input[type="text"]:focus,
+  .form-input-unit input[type="email"]:focus,
+  .form-input-unit input[type="tel"]:focus,
+  .form-input-unit input[type="number"]:focus,
+  .form-input-unit input[type="password"]:focus {
+    outline-offset: -3px; }
+
+.form-input-unit-assistance {
+  display: inline-block;
+  padding: 5px 8px;
+  border: 1px solid #eeedeb;
+  background-color: #f8f9f8;
+  font-size: 14px;
+  line-height: 1.22;
+  vertical-align: top; }
 
 .form-input-note {
   display: block;
