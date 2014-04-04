@@ -12,7 +12,8 @@ html lang="ja"
     link rel="stylesheet" href="stylesheets/modules/icon.css" media="all"
     link rel="stylesheet" href="stylesheets/modules/signup.css" media="all"
     link rel="stylesheet" href="stylesheets/state/state.css" media="all"
-    link rel="stylesheet" href="../../../vendor/font-awesome/css/font-awesome.min.css" media="all"
+    link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css" media="all"
+    script src="vendor/ajaxzip3.js" charset="UTF-8"
   body
     header
       div class="header-module"
@@ -132,7 +133,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 例）000-1111-2222 、00011112222
                     div class="form-input-cover"
-                      input class="form-input-text form-input-text-tel" type="tel" id="tel" name="tel"
+                      input class="form-input-text form-input-text-tel" type="tel" id="tel" name="tel" pattern="0\d{1,4}[\-\s]?\d{1,4}[\-\s]\d{4}"
                   div class="form-field-footer"
                     div class="form-input-status"
               fieldset class="form-fieldset"
@@ -150,7 +151,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 例）000-1111 、0001111
                     div class="form-input-cover"
-                      input class="form-input-text form-input-text-zipcode" type="text" id="zipcode" name="zipcode"
+                      input class="form-input-text form-input-text-zipcode" type="text" id="zipcode" name="zipcode" pattern="\d{3}[\-\s]?\d{4}" onKeyUp="AjaxZip3.zip2addr(this,'','prefecture','address_city');"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -162,12 +163,111 @@ html lang="ja"
                   div class="form-field-body"
                     div class="form-input-cover"
                       select class="form-input-select" id="prefecture" name="prefecture"
-                        option value="" -- 選択してください --
-                        option value="1" 北海道 
-                        option value="2" 青森県
-                        option value="3" 岩手県
-                        option value="4" 宮城県
-                        option value="5" 山形県
+                        option value="" selected="selected"
+                          | -- 都道府県 --
+                        optgroup label="北海道"
+                          option value="1"
+                            | 北海道
+                        optgroup label="東北"
+                          option value="2"
+                            | 青森県
+                          option value="3"
+                            | 岩手県
+                          option value="4"
+                            | 宮城県
+                          option value="5"
+                            | 秋田県
+                          option value="6"
+                            | 山形県
+                          option value="7"
+                            | 福島県
+                        optgroup label="関東"
+                          option value="8"
+                            | 茨城県
+                          option value="9"
+                            | 栃木県
+                          option value="10"
+                            | 群馬県
+                          option value="11"
+                            | 埼玉県
+                          option value="12"
+                            | 千葉県
+                          option value="13"
+                            | 東京都
+                          option value="14"
+                            | 神奈川県
+                        optgroup label="北陸"
+                          option value="15"
+                            | 新潟県
+                          option value="16"
+                            | 富山県
+                          option value="17"
+                            | 石川県
+                          option value="18"
+                            | 福井県
+                        optgroup label="中部"
+                          option value="19"
+                            | 山梨県
+                          option value="20"
+                            | 長野県
+                          option value="21"
+                            | 岐阜県
+                          option value="22"
+                            | 静岡県
+                          option value="23"
+                            | 愛知県
+                        optgroup label="近畿"
+                          option value="24"
+                            | 三重県
+                          option value="25"
+                            | 滋賀県
+                          option value="26"
+                            | 京都府
+                          option value="27"
+                            | 大阪府
+                          option value="28"
+                            | 兵庫県
+                          option value="29"
+                            | 奈良県
+                          option value="30"
+                            | 和歌山県
+                        optgroup label="中国"
+                          option value="31"
+                            | 鳥取県
+                          option value="32"
+                            | 島根県
+                          option value="33"
+                            | 岡山県
+                          option value="34"
+                            | 広島県
+                          option value="35"
+                            | 山口県
+                        optgroup label="四国"
+                          option value="36"
+                            | 徳島県
+                          option value="37"
+                            | 香川県
+                          option value="38"
+                            | 愛媛県
+                          option value="39"
+                            | 高知県
+                        optgroup label="九州/沖縄"
+                          option value="40"
+                            | 福岡県
+                          option value="41"
+                            | 佐賀県
+                          option value="42"
+                            | 長崎県
+                          option value="43"
+                            | 熊本県
+                          option value="44"
+                            | 大分県
+                          option value="45"
+                            | 宮崎県
+                          option value="46"
+                            | 鹿児島県
+                          option value="47"
+                            | 沖縄県
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -211,7 +311,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 英数字のみでご入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="text" id="account_name" name="account_name"
+                      input class="form-input-text" type="text" id="account_name" name="account_name" pattern="[a-zA-Z0-9]"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -237,7 +337,7 @@ html lang="ja"
                     small class="form-input-note"
                       | 半角英数字のみで、6文字以上のものを入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="password" id="password" name="password"
+                      input class="form-input-text" type="password" id="password" name="password" pattern="[a-zA-Z0-9]{6,500}"
                   div class="form-field-footer"
                     div class="form-input-status"
                 div class="form-field"
@@ -250,7 +350,7 @@ html lang="ja"
                     small class="form-input-note"
                       | ご入力防止の為、上記と同じパスワードを再度ご入力ください。
                     div class="form-input-cover"
-                      input class="form-input-text" type="password" id="password_confirmation" name="password_confirmation"
+                      input class="form-input-text" type="password" id="password_confirmation" name="password_confirmation" pattern="[a-zA-Z0-9]{6,500}"
                   div class="form-field-footer"
                     div class="form-input-status"
               fieldset class="form-fieldset"
@@ -270,27 +370,27 @@ html lang="ja"
                     ul class="form-input-cover-list form-input-cover-list-baldness-troubles"
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble1" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="1"
                           | 最近抜け毛が増えてきたと思う..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble2" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="2"
                           | 1年後の髪の毛が心配だ..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble3" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="3"
                           | 親父がハゲてるから遺伝が..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble4" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="4"
                           | 整髪剤をつけるのが恐い..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble5" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="5"
                           | 最近排水口に溜まる髪の毛が多い..
                       li
                         label
-                          input class="form-input-checkbox" type="checkbox" id="trouble6" name="baldness_troubles"
+                          input class="form-input-checkbox" type="checkbox" name="baldness_troubles" value="6"
                           | しゃべってる相手の目線が上すぎる..
                   div class="form-field-footer"
                     div class="form-input-status"

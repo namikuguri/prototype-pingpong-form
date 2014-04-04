@@ -9,7 +9,9 @@ module.exports = (grunt) ->
     banner: "/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - " + "<%= grunt.template.today(\"yyyy-mm-dd\") %>\n" + "<%= pkg.homepage ? \"* \" + pkg.homepage + \"\\n\" : \"\" %>" + "* Copyright (c) <%= grunt.template.today(\"yyyy\") %> <%= pkg.author.name %>;" + " Licensed <%= _.pluck(pkg.licenses, \"type\").join(\", \") %> */\n"
 
     # Task configuration:
-    # Reload live in the browser
+
+    # `grunt` task
+    ## Reload live in the browser
     connect:
       site:
         options:
@@ -17,7 +19,7 @@ module.exports = (grunt) ->
           base: './'
           open: 'http://localhost:8080/'
 
-    # Compile Slim to HTML
+    ## Compile Slim to HTML
     slim:
       index:
         files: [
@@ -36,7 +38,7 @@ module.exports = (grunt) ->
           ext: ".html"
         ]
 
-    # Compile SCSS to CSS
+    ## Compile SCSS to CSS
     sass:
       index:
         files: [
@@ -55,30 +57,46 @@ module.exports = (grunt) ->
           ext: ".css"
         ]
 
-    # Make Style Guide ( StyleDocco )
-    styleguide:
-      dist:
-        options:
-          name: "Style Guide"
-          framework:
-            name: "styledocco"
-            options:
-              preprocessor: "sass"
-          template:
-            include: ["vendor/font-awesome/css/font-awesome.min.css",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.eot",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.svg",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.ttf",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.woff",
-                      "vendor/font-awesome/fonts/FontAwesome.otf"]
-        files: ["docs/styleguide": "src/stylesheets/**/*.scss", "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"]
+    ## Minify Javacscipt
+    uglify:
+      index:
+        files: [
+          expand: true
+          cwd: "src/javascripts/"
+          src: ["*.js"]
+          dest: "javascripts/"
+          ext: ".js"
+        ]
+      signup:
+        files: [
+          expand: true
+          cwd: "src/demo/signup/javascripts/"
+          src: ["*.js"]
+          dest: "demo/signup/javascripts/"
+          ext: ".js"
+        ]
 
-    # Lint HTML
+    ## Monitoring files, and Do browser live reload
+    watch:
+      slim:
+        files: ["src/{,*/}*.slim", "src/demo/signup/*.slim"]
+        tasks: ["slim"]
+      sass:
+          files: ["src/stylesheets/**/*.scss", "src/demo/signup/stylesheets/**/*.scss"]
+          tasks: ["sass"]
+      uflify:
+          files: ["src/javascripts/**/*.js", "src/demo/signup/javascripts/**/*.js"]
+          tasks: ["uglify"]
+      options:
+        livereload: true
+
+    # `grunt deploy` task
+    ## Lint HTML
     htmllint:
       index: "*.html"
       signup: "demo/signup/*.html"
 
-    # Lint CSS
+    ## Lint CSS
     csslint:
       options:
         "box-model": false
@@ -88,7 +106,7 @@ module.exports = (grunt) ->
       signup:
         src: ["demo/signup/stylesheets/**/*.css"]
 
-    # Parse CSS and add vendor-prefixed CSS properties
+    ## Parse CSS and add vendor-prefixed CSS properties
      autoprefixer:
        index:
          options:
@@ -99,16 +117,24 @@ module.exports = (grunt) ->
            browsers: ["last 2 version", "ie >= 8"]
          src: ["demo/signup/stylesheets/**/*.css"]
 
-    # Monitoring files, and Do browser live reload
-    watch:
-      slim:
-        files: ["src/{,*/}*.slim", "src/demo/signup/*.slim"]
-        tasks: ["slim"]
-      sass:
-          files: ["src/stylesheets/**/*.scss", "src/demo/signup/stylesheets/**/*.scss"]
-          tasks: ["sass"]
-      options:
-        livereload: true
+    # `grunt doc` task
+    ## Make Style Guide ( StyleDocco )
+    styleguide:
+      dist:
+        options:
+          name: "Style Guide"
+          framework:
+            name: "styledocco"
+            options:
+              preprocessor: "sass"
+          template:
+            include: ["demo/signup/vendor/font-awesome/css/font-awesome.min.css",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.eot",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.svg",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.ttf",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.woff",
+                      "demo/signup/vendor/font-awesome/fonts/FontAwesome.otf"]
+        files: ["docs/styleguide": "src/stylesheets/**/*.scss", "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"]
 
   # Setting Load & Register task:
   grunt.registerTask "default", [], ->
@@ -133,3 +159,7 @@ module.exports = (grunt) ->
   grunt.registerTask "sass", [], ->
     grunt.loadNpmTasks "grunt-contrib-sass"
     grunt.task.run "sass"
+
+  grunt.registerTask "uglify", [], ->
+    grunt.loadNpmTasks "grunt-contrib-uglify"
+    grunt.task.run "uglify"
