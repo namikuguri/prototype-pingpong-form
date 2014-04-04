@@ -246,6 +246,15 @@
   &:last-child {
     margin-right: 0;
   }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="password"] {
+    &:focus {
+      outline-offset: -3px;
+    }
+  }
 }
 
 .form-input-unit-assistance {

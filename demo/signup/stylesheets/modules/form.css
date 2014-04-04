@@ -136,6 +136,12 @@
   margin-right: 8px; }
   .form-input-unit:last-child {
     margin-right: 0; }
+  .form-input-unit input[type="text"]:focus,
+  .form-input-unit input[type="email"]:focus,
+  .form-input-unit input[type="tel"]:focus,
+  .form-input-unit input[type="number"]:focus,
+  .form-input-unit input[type="password"]:focus {
+    outline-offset: -3px; }
 
 .form-input-unit-assistance {
   display: inline-block;
