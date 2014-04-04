@@ -128,12 +128,12 @@ module.exports = (grunt) ->
             options:
               preprocessor: "sass"
           template:
-            include: ["vendor/font-awesome/css/font-awesome.min.css",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.eot",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.svg",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.ttf",
-                      "vendor/font-awesome/fonts/fontawesome-webfont.woff",
-                      "vendor/font-awesome/fonts/FontAwesome.otf"]
+            include: ["demo/signup/vendor/font-awesome/css/font-awesome.min.css",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.eot",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.svg",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.ttf",
+                      "demo/signup/vendor/font-awesome/fonts/fontawesome-webfont.woff",
+                      "demo/signup/vendor/font-awesome/fonts/FontAwesome.otf"]
         files: ["docs/styleguide": "src/stylesheets/**/*.scss", "demo/signup/docs/styleguide": "src/demo/signup/stylesheets/**/*.scss"]
 
   # Setting Load & Register task:
